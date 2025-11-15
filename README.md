@@ -46,8 +46,8 @@ Users can **create**, **view**, **edit**, and **delete** blog posts with a clean
 
 ## 📂 Project Screenshots
 <img width="1896" height="905" alt="Screenshot 2025-11-15 224935" src="https://github.com/user-attachments/assets/ad2f3133-2254-41e6-8d1d-13ecc8cd014b" />
-<img width="1902" height="898" alt="Screenshot 2025-11-15 225043" src="https://github.com/user-attachments/assets/f0d2466e-ff77-4af8-8f8a-24650071f9f3" />
 <img width="1919" height="913" alt="Screenshot 2025-11-15 234109" src="https://github.com/user-attachments/assets/51d0e751-9b59-4d77-bc1f-f7c1f82486bd" />
+<img width="1914" height="903" alt="Screenshot 2025-11-15 225110" src="https://github.com/user-attachments/assets/cefc7319-95ff-4991-a9d7-ba91218db597" />
 <img width="1892" height="903" alt="Screenshot 2025-11-15 225124" src="https://github.com/user-attachments/assets/39399c2e-daaa-4088-bed0-7d529a4c16ec" />
 
 
