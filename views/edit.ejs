@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head') %>
+  <title>Edit Blog</title>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <%- include('./partials/nav') %>
+
+  <main class="container py-4" style="max-width:700px; margin:0 auto;">
+    <h1 style="font-family: 'Georgia', serif; color:#5f1c9a;">Edit Blog</h1>
+
+    <% if (typeof error !== 'undefined' && error) { %>
+      <div style="background:#ffe6e6; padding:10px; border-radius:6px; color:#b00020; margin-bottom:12px;">
+        <%= error %>
+      </div>
+    <% } %>
+
+    <form method="POST" action="/edit/<%= blog._id %>" style="display:flex; flex-direction:column; gap:16px;">
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <label for="title" style="font-weight:600;">Blog Title</label>
+        <input id="title" name="title" type="text" value="<%= blog.title %>" required
+               style="padding:10px; font-size:16px; border:1px solid #ccc; border-radius:6px;">
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <label for="content" style="font-weight:600;">Blog Content</label>
+        <textarea id="content" name="content" rows="8" required
+                  style="padding:10px; font-size:16px; border:1px solid #ccc; border-radius:6px;"><%= blog.content %></textarea>
+      </div>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <button type="submit" style="padding:10px 18px; border-radius:6px; border:none; background:#1e88e5; color:white; cursor:pointer;">Update</button>
+
+        <a href="/" style="display:inline-block; padding:10px 18px; border-radius:6px; background:#777; color:white; text-decoration:none;">Cancel</a>
+      </div>
+    </form>
+  </main>
+
+  <%- include('./partials/script') %>
+</body>
+</html>

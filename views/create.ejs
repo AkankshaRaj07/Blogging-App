@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head') %>
+    <title>Create Blog</title>
+</head>
+
+<body class="bg-purple-50 font-sans min-h-screen"> 
+    <!-- Soft light lavender background -->
+
+    <!-- Navigation -->
+    <%- include('./partials/nav') %>
+
+    <!-- Parent container -->
+    <h1>Create Your Own Blog</h1>
+
+<div class="form-container" style="max-width: 600px; margin: 20px auto;">
+  <form method="POST" action="/create" style="display: flex; flex-direction: column; gap: 20px;">
+
+    <div style="display: flex; flex-direction: column; gap: 5px;">
+      <label for="title" style="font-weight: 600;">Blog Title</label>
+      <input 
+        type="text" 
+        id="title" 
+        name="title" 
+        placeholder="This is title..." 
+        style="padding: 12px; font-size: 16px; width: 100%; border: 1px solid #ccc; border-radius: 6px;"
+      >
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 5px;">
+      <label for="content" style="font-weight: 600;">Blog Content</label>
+      <textarea 
+        id="content" 
+        name="content" 
+        placeholder="This is Content..." 
+        rows="5"
+        style="padding: 12px; font-size: 16px; width: 100%; border: 1px solid #ccc; border-radius: 6px; resize: vertical;"
+      ></textarea>
+    </div>
+
+    <button 
+      type="submit" 
+      style="padding: 12px; font-size: 16px; background-color: #6460da; color: white; border: none; border-radius: 6px; cursor: pointer;">
+      Create Blog
+    </button>
+
+  </form>
+</div>
+
+    <%- include('./partials/script') %>
+
+</body>
+</html>
