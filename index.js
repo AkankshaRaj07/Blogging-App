@@ -8,9 +8,12 @@ const { handleGetHomePage } = require("./controllers/showBlogs");
 
 const editRoute = require("./routes/edit");
 
-const PORT=8000;
+const PORT = process.env.PORT || 8000;
 
-connectMongoose('mongodb://127.0.0.1:27017/blog-app').then(() => console.log("MongoDb Connected."));
+
+connectMongoose(process.env.MONGODB_URI)
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.error("Mongo Error:", err));
 
 app.set("view engine" , "ejs");
 app.set("views", path.resolve("./views"));
